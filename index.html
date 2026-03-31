@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashing Light</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+            transition: background-color 0.05s;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let on = false;
+        setInterval(() => {
+            document.body.style.backgroundColor = on ? 'white' : 'black';
+            on = !on;
+        }, 100); // change 100 to lower number for faster flashing
+    </script>
+</body>
+</html>
